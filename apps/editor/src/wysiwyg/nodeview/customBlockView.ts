@@ -80,7 +80,10 @@ export class CustomBlockView implements NodeView {
       if (node) {
         this.wrapper.appendChild(node);
       }
-      this.renderToolArea();
+
+      if (this.node.attrs.info !== 'abc') {
+        this.renderToolArea();
+      }
     }
   }
 
