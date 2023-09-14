@@ -1,4 +1,4 @@
-import { Schema, NodeSpec, MarkSpec, Fragment } from 'prosemirror-model';
+import { Schema, NodeSpec, MarkSpec, Fragment, Node } from 'prosemirror-model';
 import { EditorView, Decoration, DecorationSet } from 'prosemirror-view';
 import { EditorState, Plugin, PluginKey, Selection, TextSelection } from 'prosemirror-state';
 import { undoInputRule, InputRule, inputRules } from 'prosemirror-inputrules';
@@ -132,7 +132,7 @@ export interface PluginContext {
     TextSelection: typeof TextSelection;
   };
   pmView: { Decoration: typeof Decoration; DecorationSet: typeof DecorationSet };
-  pmModel: { Fragment: typeof Fragment };
+  pmModel: { Fragment: typeof Fragment, Node: typeof Node };
   pmRules: {
     inputRules: typeof inputRules;
     InputRule: typeof InputRule;

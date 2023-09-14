@@ -9,6 +9,10 @@ declare module 'prosemirror-model' {
 
   export type ProsemirrorNode = Model.Node;
 
+  export interface Node {
+    static Node: Model.Node;
+  }
+
   export interface NodeType {
     compatibleContent(node: NodeType): boolean;
   }
