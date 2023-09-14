@@ -1,18 +1,12 @@
 {
-  "name": "@toast-ui/editor",
-  "version": "3.2.2",
-  "description": "GFM  Markdown Wysiwyg Editor - Productive and Extensible",
+  "name": "qkr10-tui-editor",
+  "version": "1.0.0",
+  "description": "tui editor fork",
   "keywords": [
-    "nhn",
     "nhn cloud",
-    "toast",
     "toastui",
-    "toast-ui",
-    "markdown",
     "wysiwyg",
-    "editor",
-    "preview",
-    "gfm"
+    "editor"
   ],
   "main": "dist/toastui-editor.js",
   "module": "dist/esm/",
