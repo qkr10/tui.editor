@@ -73,8 +73,8 @@ export class CustomBlockView implements NodeView {
     if (toDOMNode) {
       const node = toDOMNode(this.node);
 
-      while (this.wrapper.hasChildNodes()) {
-        this.wrapper.removeChild(this.wrapper.lastChild!);
+      if (this.wrapper.hasChildNodes()) {
+        return;
       }
 
       if (node) {
