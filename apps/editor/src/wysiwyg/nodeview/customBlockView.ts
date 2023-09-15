@@ -130,7 +130,9 @@ export class CustomBlockView implements NodeView {
       handleDOMEvents: {
         mousedown: () => {
           if (this.editorView.hasFocus()) {
-            this.innerEditorView!.focus();
+            if (this.node.attrs.info !== 'abc') {
+              this.innerEditorView!.focus();
+            }
           }
           return true;
         },
